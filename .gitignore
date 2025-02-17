@@ -1,19 +1,41 @@
-# Ignore node_modules (dependencies can be installed with npm install)
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Ignore build folder (should be rebuilt on deployment)
-dist/
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Ignore environment variables (if used)
-.env
-.env.local
+# testing
+/coverage
 
-# Ignore Vite cache and logs
-.vite/
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-# Ignore MacOS and system files
-.DS_Store
-Thumbs.db
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
