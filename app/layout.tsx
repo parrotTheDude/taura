@@ -1,10 +1,4 @@
-// app/layout.tsx
 import "./globals.css";
-
-export const metadata = {
-  title: "TAURA",
-  description: "SOUL-FUELED | SPIRIT-DRIVEN"
-};
 
 export default function RootLayout({
   children,

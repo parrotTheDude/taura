@@ -1,12 +1,11 @@
 export const metadata = {
-  title: "TAURA",
+  title: "Links | TAURA",
   description: "SOUL-FUELED | SPIRIT-DRIVEN"
 };
 
-
 // Import the client component
-import HomePage from "./HomePage";
+import LinktreePage from "./Linktree";
 
 export default function Page() {
-  return <HomePage />;
+  return <LinktreePage />;
 }
