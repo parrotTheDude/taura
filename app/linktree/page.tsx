@@ -1,9 +1,5 @@
-export const metadata = {
-  title: "Links | TAURA",
-  description: "SOUL-FUELED | SPIRIT-DRIVEN"
-};
+"use client"; // ✅ Mark the page as a client component
 
-// Import the client component
 import LinktreePage from "./Linktree";
 
 export default function Page() {
