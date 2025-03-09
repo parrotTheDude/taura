@@ -7,7 +7,7 @@ export default function ShopPage() {
     const script = document.createElement("script");
     script.src = "https://app.ecwid.com/script.js?YOUR_STORE_ID";
     script.async = true;
-    script.charSet = "UTF-8";
+    script.charset = "UTF-8";
     document.body.appendChild(script);
 
     return () => {

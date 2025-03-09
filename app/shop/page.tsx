@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "SHOP | TAURA",
+  title: "Collections | TAURA",
   description: "SOUL-FUELED | SPIRIT-DRIVEN"
 };
 
