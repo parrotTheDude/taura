@@ -4,72 +4,85 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-white p-6">
+    <main className="flex flex-col items-center justify-center bg-white p-6">
       <div className="w-full max-w-3xl text-center">
-        {/* Title */}
-        <h1 className="text-4xl font-bold text-gray-800">About TAURA</h1>
-        <p className="text-gray-600 mt-2">SOUL-FUELED | SPIRIT-DRIVEN</p>
 
-        {/* Image (Optional) */}
-        <div className="mt-6 flex justify-center">
-          <Image
-            src="/taura.webp" // Ensure this exists in the public folder
-            alt="Taura Logo"
-            width={200}
-            height={200}
-            className="rounded-lg"
-            unoptimized
-          />
-        </div>
+        {/* Banner Image */}
+        <Image 
+          src="/images/sparksOfConnection.webp" 
+          alt="About Taura Banner" 
+          width={600} 
+          height={300} 
+          className="rounded-lg max-w-full mx-auto h-auto"
+          unoptimized 
+        />
+
+        {/* Title */}
+        <h1 className="text-4xl font-bold text-gray-800 pt-4">About TAURA</h1>
 
         {/* About Content */}
         <section className="mt-6 text-gray-700 leading-relaxed">
           <p>
-            TAURA is more than just a brand—it's a movement. Our mission is to empower, inspire,
-            and create a space where authenticity thrives. Rooted in creativity, driven by passion,
-            and fueled by community, we aim to leave a lasting impact.
+            At Taura, we create sparks of connection and self-expression. We celebrate the beauty of handmade crafts, 
+            the power of creativity, and the profound impact of mindful choices.
           </p>
 
           <p className="mt-4">
-            Whether it's through art, fashion, or meaningful collaborations, TAURA represents a
-            lifestyle that embraces individuality while uniting people through shared experiences.
+            Our mission is to craft pieces that ignite and nourish your spirit—envisioning a life where we embrace freedom, 
+            authenticity, and the joy that the journey brings.
           </p>
         </section>
 
-        {/* Team Section (Optional) */}
+        {/* Values Section */}
         <section className="mt-8">
-          <h2 className="text-2xl font-semibold text-gray-800">Meet the Team</h2>
-          <p className="text-gray-600">A group of passionate individuals bringing TAURA to life.</p>
-
-          <div className="mt-6 flex justify-center space-x-6">
-            {/* Example team member placeholders */}
-            <div className="flex flex-col items-center">
-              <Image
-                src="/team1.jpg" // Replace with real image
-                alt="Team Member 1"
-                width={80}
-                height={80}
-                className="rounded-full"
-                unoptimized
-              />
-              <p className="text-gray-700 mt-2 text-sm font-medium">Alex Doe</p>
-              <p className="text-gray-500 text-xs">Founder</p>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <Image
-                src="/team2.jpg" // Replace with real image
-                alt="Team Member 2"
-                width={80}
-                height={80}
-                className="rounded-full"
-                unoptimized
-              />
-              <p className="text-gray-700 mt-2 text-sm font-medium">Jamie Lee</p>
-              <p className="text-gray-500 text-xs">Creative Director</p>
-            </div>
-          </div>
+          <h2 className="text-2xl font-semibold text-gray-800">Our Values</h2>
+          <p className="text-gray-600 mt-2">
+            <strong>Community | Nature | Science</strong>
+          </p>
+          <p className="text-gray-600">
+            <strong>Freedom of Expression | Ethical Living | Innovation</strong>
+          </p>
+          <p className="mt-4 text-gray-700">
+            These are the pillars we stand on—the guiding lights that inspire everything we create and define our purpose-driven designs.
+          </p>
+          <p className="mt-4 text-gray-700">
+            Each Taura piece is a spark, bridging the connection between nature and the human spirit. 
+            We design for those who seek more than just a product—they seek authenticity, inspiration, and a deeper bond 
+            with what they choose to wear.
+          </p>
         </section>
+
+        {/* Inspiration Section */}
+        <section className="mt-8">
+          <h2 className="text-2xl font-semibold text-gray-800">Inspired by the World Around Us</h2>
+          <p className="text-gray-700 mt-2">
+            From the rhythm of music to the magic of books, the drama of films, and the transformative power of stories, 
+            our creations walk beside you as you explore your path, embrace your identity, and cultivate your passions.
+          </p>
+        </section>
+
+        {/* Sustainability Section */}
+        <section className="mt-8">
+          <h2 className="text-2xl font-semibold text-gray-800">A Sustainable Journey</h2>
+          <p className="text-gray-700 mt-2">
+            Our commitment goes beyond design. Every detail is crafted with care, rooted in ethical and sustainable practices. 
+            From responsibly sourced materials to mindful production processes, we strive to minimize our environmental impact 
+            while fostering a conscious and compassionate economy.
+          </p>
+        </section>
+
+        {/* Community Section */}
+        <section className="mt-8">
+          <h2 className="text-2xl font-semibold text-gray-800">Your Story, Our Inspiration</h2>
+          <p className="text-gray-700 mt-2">
+            Taura is more than a brand—it’s a community. We want to be part of your story, to share in your special moments, 
+            and to become the canvas through which you express your truest self.
+          </p>
+        </section>
+
+        <p className="mt-6 text-gray-800 font-semibold">Wings to fly, roots to thrive.</p>
+
+        <p className="mt-6 text-gray-800 font-semibold">Discover your spark. Explore Taura today.</p>
       </div>
     </main>
   );

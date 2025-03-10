@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import postmark from "postmark"; // Import Postmark SDK
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -15,22 +17,30 @@ export default function ContactPage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Function to send email via Postmark
+  const sendPostmarkEmail = async () => {
+    //Doesn't do anything yet. Need to link to an API.
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
-
-    // Placeholder for form submission logic (e.g., API call)
-    setTimeout(() => {
-      alert("Message sent successfully!");
-      setSubmitted(false);
-      setFormData({ name: "", email: "", message: "" });
-    }, 1000);
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-white p-6">
+    <main className="pt-4 flex flex-col items-center justify-center bg-white p-6">
       <div className="w-full max-w-lg">
-        <h1 className="text-3xl font-bold text-gray-800 text-center">Contact Us</h1>
+        {/* Banner Image */}
+        <Image 
+          src="/images/fly.webp" 
+          alt="Contact Taura Banner" 
+          width={600} 
+          height={300} 
+          className="rounded-lg max-w-full mx-auto h-auto"
+          unoptimized 
+        />
+
+        <h1 className="text-3xl font-bold text-gray-800 text-center pt-4">Contact Us</h1>
         <p className="text-gray-600 text-center mt-2">
           We'd love to hear from you. Fill out the form below and we'll get back to you!
         </p>

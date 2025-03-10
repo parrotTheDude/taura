@@ -12,12 +12,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Shared Header */}
         <header className="w-full max-w-screen-md mx-auto flex flex-col items-center">
           {/* Logo */}
-          <Link href="/">
-            <img
-              src="/tauraSmall.webp"
-              alt="Taura Logo"
-              className="w-[60px] h-auto sm:w-[80px] pt-4"
-            />
+          <Link href="/" className="text-2xl font-bold tracking-wide text-gray-800 p-2 pt-8">
+            TAURA
           </Link>
 
           {/* Navigation Links */}
@@ -27,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/" className="hover:text-gray-500 transition">Home</Link>
               </li>
               <li>
-                <Link href="/shop" className="hover:text-gray-500 transition">Collections</Link>
+                <Link href="/collections" className="hover:text-gray-500 transition">Collections</Link>
               </li>
               <li>
                 <Link href="/about" className="hover:text-gray-500 transition">About</Link>

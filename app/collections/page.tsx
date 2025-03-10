@@ -1,11 +1,11 @@
 export const metadata = {
-  title: "Collections | TAURA",
+  title: "COLLECTIONS | TAURA",
   description: "SOUL-FUELED | SPIRIT-DRIVEN"
 };
 
 // Import the client component
-import Shop from "./Shop";
+import Collections from "./Collections";
 
 export default function Page() {
-  return <Shop />;
+  return <Collections />;
 }

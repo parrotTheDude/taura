@@ -3,7 +3,6 @@ export const metadata = {
   description: "SOUL-FUELED | SPIRIT-DRIVEN"
 };
 
-
 // Import the client component
 import HomePage from "./HomePage";
 
