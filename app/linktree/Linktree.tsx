@@ -5,7 +5,7 @@ import Link from "next/link";
 const links = [
   {
     title: "Official Website",
-    url: "/linktree",
+    url: "https://tauraaspark.com/",
     icon: "/icons/global.svg",
   },
   {
